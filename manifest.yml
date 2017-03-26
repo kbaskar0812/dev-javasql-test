@@ -1,0 +1,11 @@
+applications:
+- path: target/JavaCloudantApp.war
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: dev-javasql-test
+  host: dev-javasql-test
+  disk_quota: 1024M
+  services:
+  - dev-javasql-test-cloudantNoSQLDB
+  - ClearDB MySQL Database-ne
